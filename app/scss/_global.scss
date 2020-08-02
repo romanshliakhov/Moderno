@@ -11,6 +11,22 @@ html {
 a {
     display: inline-block;
     text-decoration: none;
+    color: $gtext;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $gtext;
 }
 
 .container {
