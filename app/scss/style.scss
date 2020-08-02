@@ -123,20 +123,136 @@
         right: 20px;
         top: 16px;
     }
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+// search end
+// products start
+.products {
+    padding: 100px 0;
+    background-color: $bg-grey;
+
+    &__inner-btn {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        padding: 12px 21px;
+        border: none;
+        background-color: #fff;
+        color: $bg;
+        cursor: pointer;
+        & + button {
+            margin-left: 5px;
+        }
+        &.mixitup-control-active {
+            background-color: $red;
+            color: #fff;
+            outline: none;
+        }
+    }
+
+    &__inner-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 442px;
+        width: 100%;
+        margin-bottom: 30px;
+        box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    }
+
+    &__item-img {
+        display: block;
+        min-height: 250px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__item-content {
+        display: flex;
+        justify-content: space-between;
+        min-height: 90px;
+        padding: 0% 30px;
+        align-items: center; 
+        font-weight: 500;
+        border-bottom: 1px solid $border;       
+    }
+
+    &__item-name {        
+        max-width: 310px;
+    }
+
+    &__item-title {
+        display: block;
+        font-size: 18px;        
+        color: $bg;
+    }
+
+    &__item-category {
+        display: block;
+        font-size: 14px;
+        color: $green;
+    }
+
+    &__item-price {
+        font-size: 20px;
+        color: $bg;
+        font-weight: 700;
+    }
+
+    &__item-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 70px;
+        padding: 10px 30px;
+    }
+
+    &__item-autor {
+        display: flex;
+        align-items: center;        
+    }
+
+    &__autor-img {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right: 14px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__autor-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: $gtext;        
+    }
+
+    &__bottom {        
+        text-align: center;
+        font-size: 16px;
+        color: $bg;        
+    }
+
+    &__bottom-btn {
+        margin: 45px 5px 0;
+        padding: 20px 30px;
+        box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        &.mixitup-control-active {
+            background-color: $red;
+            color: #fff;
+            outline: none;
+        }
+    }
+}
+// products end
+
