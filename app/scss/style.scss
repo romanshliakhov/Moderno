@@ -214,7 +214,8 @@
 
     &__item-autor {
         display: flex;
-        align-items: center;        
+        align-items: center; 
+        max-width: 245px;       
     }
 
     &__autor-img {
@@ -232,6 +233,14 @@
         font-size: 14px;
         font-weight: 500;
         color: $gtext;        
+    }
+
+    &__item-star {
+        font-size: 12px;
+    }
+
+    &__item-rate {
+        color: $bg;
     }
 
     &__bottom {        
@@ -257,13 +266,33 @@
 // products end
 
 // slider start
-.slider {
+.products__slider {
     padding: 110px 0 120px;
 
-    
-
-
-
+    .slick-dots {
+        text-align: center;
+        margin: 50px;
+        li {
+            display: inline-block;
+            margin-left: 3px;
+            margin-right: 3px;
+            &.slick-active {
+                button {
+                    background-color: $green;
+                }
+            }            
+            button {
+                border-radius: 50%;
+                background-color: rgb(232, 232, 232);
+                border: none;
+                font-size: 0;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+    }
 }
 // slider end
 
