@@ -368,3 +368,44 @@
     }
 }
 // advantages end
+// autor start
+.autor {
+    min-height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__box {
+        min-width: 650px;
+        min-height: 215px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $green;
+    }
+
+    &__title {
+        max-width: 260px;
+        margin-right: 45px;
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        
+    }
+
+    &__title-bold {
+        font-weight: 700;
+    }
+    
+    &__link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 14px 40px;
+        color: $bg;
+        background-color: #fff;
+    }
+}
+// autor end
