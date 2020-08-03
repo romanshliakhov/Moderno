@@ -9,16 +9,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 90px;        
+        height: 90px;
     }
 
     &__text {
         display: flex;
         margin-left: auto;
-        margin-right: 50px;         
+        margin-right: 50px;
     }
 
-    &__help {        
+    &__help {
         color: $red;
     }
 
@@ -40,7 +40,7 @@
         background-color: $red;
     }
 
-    &__menu {        
+    &__menu {
         background-color: $bg;
     }
 
@@ -48,20 +48,22 @@
         display: flex;
         align-items: center;
         height: 60px;
-    }  
+    }
 
     &__list {
-        display: inline-block; 
-        & + li {
+        display: inline-block;
+
+        &+li {
             margin-left: 30px;
-        }      
+        }
     }
 
     &__list-link {
-        color: #fff; 
+        color: #fff;
         font-size: 14px;
     }
 }
+
 // header end
 // search start
 .search {
@@ -108,9 +110,11 @@
         font-size: 14px;
         font-weight: 500;
         outline: none;
+
         &:focus {
             border: 1px solid #000;
         }
+
         &::placeholder {
             color: $intext;
         }
@@ -124,6 +128,7 @@
         top: 16px;
     }
 }
+
 // search end
 // products start
 .products {
@@ -141,9 +146,11 @@
         background-color: #fff;
         color: $bg;
         cursor: pointer;
-        & + button {
+
+        &+button {
             margin-left: 5px;
         }
+
         &.mixitup-control-active {
             background-color: $red;
             color: #fff;
@@ -177,18 +184,18 @@
         justify-content: space-between;
         min-height: 90px;
         padding: 0% 30px;
-        align-items: center; 
+        align-items: center;
         font-weight: 500;
-        border-bottom: 1px solid $border;       
+        border-bottom: 1px solid $border;
     }
 
-    &__item-name {        
+    &__item-name {
         max-width: 310px;
     }
 
     &__item-title {
         display: block;
-        font-size: 18px;        
+        font-size: 18px;
         color: $bg;
     }
 
@@ -214,8 +221,8 @@
 
     &__item-autor {
         display: flex;
-        align-items: center; 
-        max-width: 245px;       
+        align-items: center;
+        max-width: 245px;
     }
 
     &__autor-img {
@@ -232,7 +239,7 @@
     &__autor-name {
         font-size: 14px;
         font-weight: 500;
-        color: $gtext;        
+        color: $gtext;
     }
 
     &__item-star {
@@ -243,10 +250,10 @@
         color: $bg;
     }
 
-    &__bottom {        
+    &__bottom {
         text-align: center;
         font-size: 16px;
-        color: $bg;        
+        color: $bg;
     }
 
     &__bottom-btn {
@@ -256,6 +263,7 @@
         border: none;
         background-color: #fff;
         cursor: pointer;
+
         &.mixitup-control-active {
             background-color: $red;
             color: #fff;
@@ -263,6 +271,7 @@
         }
     }
 }
+
 // products end
 
 // slider start
@@ -272,15 +281,18 @@
     .slick-dots {
         text-align: center;
         margin: 50px;
+
         li {
             display: inline-block;
             margin-left: 3px;
             margin-right: 3px;
+
             &.slick-active {
                 button {
                     background-color: $green;
                 }
-            }            
+            }
+
             button {
                 border-radius: 50%;
                 background-color: rgb(232, 232, 232);
@@ -294,6 +306,7 @@
         }
     }
 }
+
 // slider end
 // advantages start
 .advantages {
@@ -306,16 +319,17 @@
 
     &__inner {
         display: flex;
-        justify-content: space-between;        
+        justify-content: space-between;
     }
 
     &__item {
         max-width: 370px;
         text-align: center;
-        padding: 0px 15px;        
+        padding: 0px 15px;
+
         &:hover {
             .advantages__item-images {
-                background-color: $green;                
+                background-color: $green;
             }
 
             .advantages__item-title {
@@ -326,7 +340,7 @@
                 g {
                     fill: #fff;
                 }
-            }            
+            }
         }
     }
 
@@ -334,7 +348,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto 30px;        
+        margin: 0 auto 30px;
         width: 114px;
         height: 114px;
         background-color: #fff;
@@ -361,12 +375,13 @@
         font-size: 24px;
         font-weight: 500;
         transition: all 0.5s;
-    }  
-    
+    }
+
     &__item-desc {
         font-size: 15px;
     }
 }
+
 // advantages end
 // autor start
 .autor {
@@ -393,13 +408,13 @@
         font-size: 30px;
         line-height: 30px;
         color: #fff;
-        
+
     }
 
     &__title-bold {
         font-weight: 700;
     }
-    
+
     &__link {
         font-size: 18px;
         line-height: 36px;
@@ -408,4 +423,38 @@
         background-color: #fff;
     }
 }
+
 // autor end
+// tutorial start
+.tutorial {
+    padding: 70px 0 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+    }
+
+    &__content {
+        max-width: 370px;
+        width: 100%;
+    }
+
+    &__content-img {
+        min-height: 270px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__content-title {
+        padding: 30px 10px;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        color: $bg;
+        background-color: $bg-text;
+    }
+}
+
+// tutorial end
