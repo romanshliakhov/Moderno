@@ -295,4 +295,76 @@
     }
 }
 // slider end
+// advantages start
+.advantages {
+    padding: 110px 0;
+    background-color: $bg;
 
+    &__title {
+        color: #fff;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;        
+    }
+
+    &__item {
+        max-width: 370px;
+        text-align: center;
+        padding: 0px 15px;        
+        &:hover {
+            .advantages__item-images {
+                background-color: $green;                
+            }
+
+            .advantages__item-title {
+                color: $green;
+            }
+
+            .advantages__item-images {
+                g {
+                    fill: #fff;
+                }
+            }            
+        }
+    }
+
+    &__item-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;        
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+
+    &__image-lock {
+        width: 50px;
+    }
+
+    &__image-gift {
+        width: 71px;
+        height: 68px;
+    }
+
+    &__image-heart {
+        width: 86px;
+    }
+
+    &__item-title {
+        margin-bottom: 25px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        transition: all 0.5s;
+    }  
+    
+    &__item-desc {
+        font-size: 15px;
+    }
+}
+// advantages end
