@@ -4,7 +4,6 @@
 
 
 .header {
-
     &__top-inner {
         display: flex;
         justify-content: space-between;
@@ -70,8 +69,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 533px;
+    min-height: 533px;  
+    &.search-page {
+        min-height: 230px;
+            
+        .search__inner {
+            padding: 55px 0 70px;   
+            &-text {
+                margin-bottom: 20px;
+            }     
+        }
+    }
 
+       
     &__inner {
         padding: 155px 0 100px;
         color: #fff;
