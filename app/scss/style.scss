@@ -720,7 +720,7 @@
     border: none;
     cursor: pointer;
     position: relative;
-    &::before {
+    &:before {
         content: "\f002";
         color: #fff;
         position: absolute;
