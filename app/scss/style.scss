@@ -239,7 +239,7 @@
 
     &__autor-img {
         display: inline-block;
-        width: 30px;
+        min-width: 30px;
         height: 30px;
         margin-right: 14px;
         border-radius: 50%;
@@ -781,4 +781,48 @@
     padding: 0;
     background-color: transparent;
     border-radius: 0px;
+}
+
+.product-page__aside {
+    .products__item-img {
+        min-height: 120px;
+    }
+
+    .products__item {
+        box-shadow: none;        
+    }
+
+    .products__item-content,
+    .products__item-info {
+        padding: 0;
+        min-height: 0;
+    }
+
+    .products__item-title,
+    .products__item-price {
+        font-size: 16px;
+    }
+
+    .products__item-content {
+        min-height: 75px;
+        border-bottom: none;
+    }
+
+    .products__item-rate {
+        display: none;
+    }
+
+    .rate-star {
+        margin-right: 0;
+    }
+
+    .products__autor-img {
+        margin-right: 9px;
+    }
+
+    .jq-ry-container {
+        padding: 0;
+    }
+
+  
 }
