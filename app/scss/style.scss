@@ -839,7 +839,6 @@
     width: 100%;
 }
 
-
 .product-page__filter {
     display: flex;
     justify-content: space-between;
@@ -855,6 +854,7 @@
         border: none;
         font-size: 16px;
         color: #90a4ae;
+        outline: transparent;
         &.active {
             color: $green;
         }
@@ -881,6 +881,7 @@ button.icon-sort-amount-asc {
     .products__item {  
         max-width: 270px;  
         background-color: #fff; 
+        transition: all .4s;
     }  
 
     .products__item-img {
@@ -944,6 +945,17 @@ button.icon-sort-amount-asc {
             color: #fff;
         }
     }
+}
+
+.products__item {
+    &.list {
+        max-width: 100%;   
+        .products__item-img {
+            width: 240px;
+            float: left;
+        }     
+    }
+    
 }
 
 
