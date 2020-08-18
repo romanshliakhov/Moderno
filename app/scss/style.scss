@@ -217,6 +217,12 @@
         color: $green;
     }
 
+    &__item-text,
+    &__item-sales,
+    &__item-list {
+        display: none;
+    }
+
     &__item-price {
         font-size: 20px;
         color: $bg;
@@ -648,6 +654,8 @@
 }
 
 // footer end
+
+
 // new items start
 .product-page__inner {
     display: flex;
@@ -947,15 +955,84 @@ button.icon-sort-amount-asc {
     }
 }
 
+
+
 .products__item {
     &.list {
-        max-width: 100%;   
+        max-width: 100%;  
+
         .products__item-img {
             width: 240px;
             float: left;
-        }     
+            min-height: 100%;
+        }    
+
+        .products__item-text {
+            display: block;
+            font-size: 14px;
+            color: #70838d;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        } 
+
+        .products__item-name {
+            max-width: 480px;
+        }  
+        
+        .products__item-content {
+            padding-top: 23px;
+        }
+    
+        .products__item-list {
+            display: block;
+        }
+
+        .products__item-star {
+            margin-left: auto;
+            margin-right: 30px;
+        }       
+    }  
+    
+    .products__item-price {
+        font-size: 30px;
     }
     
+    .products__item-sales {
+        display: block;
+        font-size: 13px;
+        color: #aeb4bb;
+        margin-top: 30px;
+    }    
+    
+    .products__item-comments,
+    .products__item-likes {
+        display: inline-block;
+        font-size: 12px;
+        color: #70838d;   
+        padding-left: 50px;
+        border-left: 1px solid #aeb4bb;  
+        position: relative;
+        &::before {
+            font-size: 16px;
+            color: $green;
+            position: absolute;
+            left: 20px;
+            top: 0;
+        }                   
+    }
+    
+    .products__item-comments {
+        padding-right: 30px;
+        &::before {
+            top: -2px;
+        }
+    }
+    
+    .products__item-comment,
+    .products__item-like {
+        font-weight: 500;
+        color: $bg;            
+    }
 }
 
 
