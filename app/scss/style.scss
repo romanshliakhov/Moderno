@@ -61,6 +61,105 @@
         color: #fff;
         font-size: 14px;
     }
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__circle {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: #f5f5f5;
+        position: relative;
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #a0a0a0;
+            font-size: 14px;
+        }
+
+        &+& {
+            margin-left: 15px;
+        }
+    }
+
+    &__circle-notification,
+    &__circle-message,
+    &__circle-basket {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 18px;
+        font-size: 11px;
+        right: -7px;
+        top: -7px;
+        color: #fff;
+    }
+
+    &__circle-notification {
+        background-color:$orange;
+
+    }
+
+    &__circle-message {
+        background-color: $tomato;
+
+    }
+
+    &__circle-basket {
+        background-color:$green;         
+    }
+
+    &__user {
+        margin-left: 20px;
+        margin-right: 25px;
+        padding-right: 20px;
+        position: relative;
+        &::before {
+            content: "\f107"; 
+            position: absolute;
+            font-family: 'icomoon';
+            font-size: 16px;
+            color: #707070;
+            top: 0;
+            right: 0;
+        }                
+    }
+
+    &__user-inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__user-images {
+        margin-right: 15px;
+        width: 34px;
+        height: 34px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    &__user-info {
+        font-size: 14px;
+        line-height: 24px;
+
+    }
+
+    &__user-name {        
+        font-weight: 500;           
+        color: #222;
+    }
+
+    &__user-balance {        
+        font-weight: 700;        
+        color: $green;
+    }
 }
 
 // header end
