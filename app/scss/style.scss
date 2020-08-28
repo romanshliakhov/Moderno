@@ -34,7 +34,8 @@
         background-color: $green;
     }
 
-    &__btn-reg {
+    &__btn-register,
+    &__btn-logout {
         margin-left: 7px;
         background-color: $red;
     }
@@ -68,6 +69,10 @@
     }
 
     &__circle {
+        &.active {
+            display:  block;
+        }
+        display: none;
         width: 34px;
         height: 34px;
         border-radius: 50%;
@@ -115,6 +120,17 @@
     &__circle-basket {
         background-color:$green;         
     }
+
+    &__btn-login--off {
+        display: none;
+    }
+
+    // &__btn-logout {
+    //     display: none;
+    //     &.header__btn-login--off { 
+    //     display: block;
+        // }  
+    // }  
 
     &__user {
         margin-left: 20px;
