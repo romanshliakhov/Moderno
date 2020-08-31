@@ -63,12 +63,12 @@
         font-size: 14px;
     }
 
-    &__box {
+    &__popup-box {
         display: flex;
         align-items: center;
     }
 
-    &__circle {
+    &__popup-link {
         &.active {
             display:  block;
         }
@@ -88,9 +88,9 @@
         }
     }  
 
-    &__circle-notification,
-    &__circle-message,
-    &__circle-basket {
+    &__notification-number,
+    &__message-number,
+    &__basket-number{
         position: absolute;
         width: 18px;
         height: 18px;
@@ -103,17 +103,17 @@
         color: #fff;
     }
 
-    &__circle-notification {
+    &__notification-number {
         background-color:$orange;
 
     }
 
-    &__circle-message {
+    &__message-number {
         background-color: $tomato;
 
     }
 
-    &__circle-basket {
+    &__basket-number{
         background-color:$green;         
     }
 
@@ -129,10 +129,8 @@
     // }  
 
     &__user-box,
-    &__basket-box {
-        position: relative;
-        margin-top: 40px;
-        height: 90px;
+    &__popup-box {
+        position: relative;               
         &:hover {
             .header__user-menu {            
                 height: auto;
@@ -143,11 +141,12 @@
         }
     }   
 
-    &__basket-box {
-        margin-top: 55px;
+    &__popup-notification,
+    &__popup-message,
+    &__popup-basket {        
         margin-left: 15px;  
         &:hover {
-            .header__basket-menu {
+            .header__popup-menu {
                 border: 1px solid #e0e0e0; 
                 overflow: auto;
                 height: auto;
@@ -156,7 +155,7 @@
         }      
     } 
 
-    &__basket-menu {
+    &__popup-menu {
         position: absolute;
         top: 62px;
         right: 0;
@@ -166,7 +165,7 @@
         background-color: #fff;              
     }
 
-    &__basket-item {
+    &__popup-item {
         display: flex;
         align-items: center;
         padding: 23px;        
@@ -175,27 +174,27 @@
         width: 269px;
     }
 
-    &__basket-images {
+    &__popup-images {
         margin-right: 15px;        
     }
 
-    &__basket-title {
+    &__popup-title {
         font-weight: 500;
         color: $bg;        
     }
 
-    &__basket-theme {
+    &__popup-theme {
         font-size: 12px;
         color: $green;      
     }
 
-    &__basket-price {
+    &__popup-price {
         font-size: 16px;
         font-weight: 500;
         color: #000;        
     }
 
-    &__basket-summ {
+    &__popup-summ {
         padding: 16px 17px 12px;        
         border: 1px solid #e0e0e0;
         border-bottom: none;
@@ -212,7 +211,7 @@
         font-weight: 700;        
     }
 
-    &__basket-btn {
+    &__summ-btn {
         padding: 12px 5px;
         font-size: 14px;
         font-weight: 700;
@@ -225,9 +224,7 @@
             margin-left: 6px;
             background-color: $red;
         } 
-    }
-
-    
+    }    
 
     &__user {
         margin-left: 20px;
