@@ -148,9 +148,13 @@
         &:hover {
             .header__popup-menu {
                 border: 1px solid #e0e0e0; 
-                overflow: auto;
+                overflow: hidden;
                 height: auto;
                 z-index: 3;
+            }
+            .header__popup-item {
+                padding: 23px;
+                border-width: 1px;
             }
         }      
     } 
@@ -162,20 +166,50 @@
         height: 0;
         overflow: hidden;
         transition: all 0.3s;
-        background-color: #fff;              
+        background-color: #fff;   
+                   
     }
 
     &__popup-item {
         display: flex;
         align-items: center;
-        padding: 23px;        
-        border: 1px solid #e0e0e0;
+        padding: 0 23px;        
+        border: 0px solid #e0e0e0;
         border-top: none;
         width: 269px;
+        position: relative;
+        transition: all 0.3s;
+        &::before {
+            position: absolute;
+            top: 27px;
+            right: 28px;
+            color: #b0bec5;
+            font-size: 16px;
+        }        
+    }
+
+    &__item-color::before {
+        color: $tomato;
     }
 
     &__popup-images {
         margin-right: 15px;        
+    }     
+
+    &__popup-name {
+        font-size: 12px;
+        color: #263238;
+        font-weight: 700;
+    }
+
+    &__popup-h1 {
+        font-size: 11px;
+        color: #84b743;
+    }
+
+    &__popup-data {
+        font-size: 10px;
+        color: #707070;        
     }
 
     &__popup-title {
@@ -192,7 +226,7 @@
         font-size: 16px;
         font-weight: 500;
         color: #000;        
-    }
+    }   
 
     &__popup-summ {
         padding: 16px 17px 12px;        
@@ -225,6 +259,20 @@
             background-color: $red;
         } 
     }    
+
+    &__popup-notification,
+    &__popup-message {
+        .header__popup-images {
+            margin-right: 20px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        .header__popup-info {
+            line-height: 18px;
+        }
+    }
 
     &__user {
         margin-left: 20px;
