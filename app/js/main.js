@@ -5,7 +5,7 @@ $(function(){
         readOnly: true
       });
 
-    $('.products__slider-inner').slick({
+    $('.product-slider__inner').slick({
       dots: true,
       arrows: false,
       slidesToShow: 4,
@@ -22,13 +22,13 @@ $(function(){
     });
 
     $('.icon-th-list').on('click', function(){
-      $('.products__item').addClass('list');
+      $('.product__item').addClass('list');
       $('.icon-th-list').addClass('active');
       $('.icon-th-large').removeClass('active')
     });
 
     $('.icon-th-large').on('click', function(){
-      $('.products__item').removeClass('list');
+      $('.product__item').removeClass('list');
       $('.icon-th-large').addClass('active');
       $('.icon-th-list').removeClass('active');
     }) 
