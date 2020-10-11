@@ -200,7 +200,7 @@
 // &__popup-name {
 //     font-size: 12px;
 //     color: #263238;
-//     font-weight: 700;
+//     @include f700;
 // }
 
 // &__popup-h1 {
@@ -214,7 +214,7 @@
 // }
 
 // &__popup-title {
-//     font-weight: 500;
+//     @include f500;
 //     color: $bg;
 // }
 
@@ -225,7 +225,7 @@
 
 // &__popup-price {
 //     font-size: 16px;
-//     font-weight: 500;
+//     @include f500;
 //     color: #000;
 // }
 
@@ -243,13 +243,13 @@
 //     padding-right: 22px;
 //     margin-bottom: 15px;
 //     font-size: 16px;
-//     font-weight: 700;
+//     @include f700;
 // }
 
 // &__summ-btn {
 //     padding: 12px 5px;
 //     font-size: 14px;
-//     font-weight: 700;
+//     @include f700;
 //     color: #fff;
 //     background-color: $green;
 //     text-align: center;
@@ -313,7 +313,7 @@
 // }
 
 // &__user-name {
-//     font-weight: 500;
+//     @include f500;
 //     color: #222;
 // }
 
@@ -369,14 +369,14 @@
     &-title {
         margin-bottom: 10px;
         font-size: 48px;
-        font-weight: 700;
+        @include f700;
         line-height: 72px;
     }
 
     &-text {
         margin-bottom: 50px;
         font-size: 20px;
-        font-weight: 500;
+        @include f500;
         line-height: 30px;
     }
 
@@ -395,7 +395,7 @@
             height: 56px;
             border: none;
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
             outline: none;
 
             &::placeholder {
@@ -474,7 +474,7 @@
         min-height: 90px;
         padding: 0% 30px;
         align-items: center;
-        font-weight: 500;
+        @include f500;
         border-bottom: 1px solid $border;
     }
 
@@ -497,7 +497,7 @@
     &-price {
         font-size: 20px;
         color: $bg;
-        font-weight: 700;
+        @include f700;
     }
 
     &-info {
@@ -526,7 +526,7 @@
 
         span {
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
         }
     }
 
@@ -597,79 +597,85 @@
 
 // slider end
 
-// .advantages {
-//     padding: 110px 0;
-//     background-color: $bg;
+// slider start
+.advantages {
+    padding: 110px 0;
+    background-color: $bg;
+}
 
-//     &__title {
-//         color: #fff;
-//     }
+.advantages__title {
+    color: #fff;
+}
 
-//     &__inner {
-//         display: flex;
-//         justify-content: space-between;
-//     }
+.advantages_inner {
+    display: flex;
+    justify-content: space-between;
+}
 
-//     &__item {
-//         max-width: 370px;
-//         text-align: center;
-//         padding: 0px 15px;
+.advantages__item {
+    max-width: 370px;
+    text-align: center;
+    padding: 0px 15px;   
+    &:hover {
+        .advantages__item-images {
+            background-color: $green;
+        }
 
-//         &:hover {
-//             .advantages__item-images {
-//                 background-color: $green;
-//             }
+        .advantages__item-title {
+            color: $green;
+        }
 
-//             .advantages__item-title {
-//                 color: $green;
-//             }
+        .advantages__item-images {
+            g {
+                fill: #fff;
+            }
+        }
+    }
 
-//             .advantages__item-images {
-//                 g {
-//                     fill: #fff;
-//                 }
-//             }
-//         }
-//     }
+    &-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
 
-//     &__item-images {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         margin: 0 auto 30px;
-//         width: 114px;
-//         height: 114px;
-//         background-color: #fff;
-//         border-radius: 50%;
-//         transition: all 0.5s;
-//     }
+    &-title {
+        margin-bottom: 25px;
+        color: #fff;
+        font-size: 24px;
+        @include f500;
+        transition: all 0.5s;
+    }
 
-//     &__image-lock {
-//         width: 50px;
-//     }
+    &-text {
+        font-size: 15px;
+    }
+}
 
-//     &__image-gift {
-//         width: 71px;
-//         height: 68px;
-//     }
 
-//     &__image-heart {
-//         width: 86px;
-//     }
+&__image-lock {
+    width: 50px;
+}
 
-//     &__item-title {
-//         margin-bottom: 25px;
-//         color: #fff;
-//         font-size: 24px;
-//         font-weight: 500;
-//         transition: all 0.5s;
-//     }
+&__image-gift {
+    width: 71px;
+    height: 68px;
+}
 
-//     &__item-desc {
-//         font-size: 15px;
-//     }
-// }
+&__image-heart {
+    width: 86px;
+}
 
+
+
+
+
+// advantages end
 
 // .author {
 //     min-height: 750px;
@@ -699,7 +705,7 @@
 //     }
 
 //     &__title-bold {
-//         font-weight: 700;
+//         @include f700;
 //     }
 
 //     &__link {
@@ -735,7 +741,7 @@
 //     &__content-title {
 //         padding: 30px 10px;
 //         font-size: 24px;
-//         font-weight: 700;
+//         @include f700;
 //         text-align: center;
 //         color: $bg;
 //         background-color: $bg-text;
@@ -763,7 +769,7 @@
 //     &__col-title {
 //         font-size: 22px;
 //         font-family: 'Raleway-Bold', sans-serif;
-//         font-weight: 700;
+//         @include f700;
 //         color: #fff;
 //         padding-bottom: 30px;
 //         margin-bottom: 30px;
@@ -788,7 +794,7 @@
 
 //     &__contacts {
 //         margin-top: 18px;
-//         font-weight: 500;
+//         @include f500;
 //         color: #fff;
 //         padding-left: 30px;
 //         position: relative;
@@ -946,7 +952,7 @@
 //     font-size: 20px;
 //     color: $bg;
 //     padding: 22px 0 19px;
-//     font-weight: 700;
+//     @include f700;
 // }
 
 // .category__list {
@@ -990,7 +996,7 @@
 //     background-color: $green;
 //     text-align: center;
 //     color: #fff;
-//     font-weight: 500;
+//     @include f500;
 //     width: 100%;
 //     display: block;
 //     border: none;
@@ -1105,7 +1111,7 @@
 //         padding: 16px 10px;
 //         background-color: $green;
 //         color: #fff;
-//         font-weight: 500;
+//         @include f500;
 //         text-align: center;    
 //     }  
 // }
@@ -1213,7 +1219,7 @@
 //         box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
 //         font-size: 16px;
 //         color: $bg;
-//         font-weight: 500;
+//         @include f500;
 //         cursor: pointer;
 //         &.active {
 //             background-color: $red;
@@ -1297,7 +1303,7 @@
 
 //     .products__item-comment,
 //     .products__item-like {
-//         font-weight: 500;
+//         @include f500;
 //         color: $bg;            
 //     }
 // }
