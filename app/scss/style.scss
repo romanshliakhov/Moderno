@@ -607,7 +607,7 @@
     color: #fff;
 }
 
-.advantages_inner {
+.advantages__inner {
     display: flex;
     justify-content: space-between;
 }
@@ -615,7 +615,8 @@
 .advantages__item {
     max-width: 370px;
     text-align: center;
-    padding: 0px 15px;   
+    padding: 0px 15px;
+
     &:hover {
         .advantages__item-images {
             background-color: $green;
@@ -657,96 +658,79 @@
     }
 }
 
-
-&__image-lock {
-    width: 50px;
-}
-
-&__image-gift {
-    width: 71px;
-    height: 68px;
-}
-
-&__image-heart {
-    width: 86px;
-}
-
-
-
-
-
 // advantages end
 
-// .author {
-//     min-height: 750px;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+// author start
+.author {
+    min-height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-//     &__box {
-//         min-width: 650px;
-//         min-height: 215px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         background-color: $green;
-//     }
+    &__box {
+        min-width: 650px;        
+        min-height: 215px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $green;
+    }
 
-//     &__title {
-//         max-width: 260px;
-//         margin-right: 45px;
-//         font-size: 30px;
-//         line-height: 30px;
-//         color: #fff;
+    &__title {
+        max-width: 260px;
+        margin-right: 45px;
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        span {
+            @include f700;
+        }
+    }  
 
-//     }
+    &__link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 14px 40px;        
+        background-color: #fff;
+    }
+}
 
-//     &__title-bold {
-//         @include f700;
-//     }
+// author end
+// tutorial start
+.tutorial {
+    padding: 70px 0 120px;
 
-//     &__link {
-//         font-size: 18px;
-//         line-height: 36px;
-//         padding: 14px 40px;
-//         color: $bg;
-//         background-color: #fff;
-//     }
-// }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    &__content {
+        max-width: 370px;
+        width: 100%;
+    }
 
-// .tutorial {
-//     padding: 70px 0 120px;
+    &__content-img {
+        min-height: 270px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-//     &__inner {
-//         display: flex;
-//         justify-content: space-between;
-//     }
+    &__content-title {
+        padding: 30px 10px;
+        font-size: 24px;
+        @include f700;
+        text-align: center;
+        color: $bg;
+        background-color: $bg-text;
+    }
+}
 
-//     &__content {
-//         max-width: 370px;
-//         width: 100%;
-//     }
-
-//     &__content-img {
-//         min-height: 270px;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover;
-//     }
-
-//     &__content-title {
-//         padding: 30px 10px;
-//         font-size: 24px;
-//         @include f700;
-//         text-align: center;
-//         color: $bg;
-//         background-color: $bg-text;
-//     }
-// }
+// tutorial end 
 
 
 // .footer {
