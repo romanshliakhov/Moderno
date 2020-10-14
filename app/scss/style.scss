@@ -348,17 +348,17 @@
     background-size: cover;
     background-position: center;
     min-height: 533px;
-    // &.search-page {
-    //     min-height: 230px;
+    &.page-search {
+        min-height: 230px;
 
-    //     .search__inner {
-    //         padding: 55px 0 70px;
+        .search__inner {
+            padding: 55px 0 70px;
 
-    //         &-text {
-    //             margin-bottom: 20px;
-    //         }
-    //     }
-    // }
+            &-text {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 .search__inner {
@@ -743,11 +743,7 @@
         display: flex;
         justify-content: space-between;
         padding: 100px 0px 80px;
-    }
-
-    // &__content {
-    //     padding: 100px 0 80px;
-    // }    
+    }        
 }
 
 .footer__col {
