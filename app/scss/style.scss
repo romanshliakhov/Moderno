@@ -90,10 +90,6 @@
         font-size: 14px;
     }
 
-    &+.header__circle {
-        margin-left: 10px;
-    }
-
     span {
         position: absolute;
         width: 18px;
@@ -138,8 +134,11 @@
     }
 }
 
-.user__box {
+.user__box,
+.basket__box {
     position: relative;
+    height: 90px;
+    margin-top: 40px;
 
     &:hover {
         .user__menu {
@@ -147,6 +146,93 @@
             border-width: 1px;
             padding: 20px;
             overflow: auto;
+        }
+    }
+}
+
+.basket__box {
+    margin-top: 54px;
+    margin-left: 15px;    
+
+    &:hover {
+        .basket__menu {
+            overflow: auto;
+            height: auto;
+        }
+    }  
+}
+
+.basket__menu {    
+    position: absolute;    
+    border: 1px solid #e0e0e0;    
+    top: 62px;
+    right: 0;    
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+    
+}
+
+.basket__item {
+    background-color: #fff;
+    border-top: none;
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    width: 269px;  
+}
+
+.basket__images {
+    margin-right: 15px;
+}
+
+.basket__info-name {
+    color: $bg;
+    @include f500;
+}
+
+.basket__info-theme {
+    font-size: 12px;
+    color: $green;
+}
+
+.basket__info-price {
+    font-size: 16px;
+    @include f500;
+    color: #000;
+}
+
+.basket__summ {
+    padding: 16px 17px 12px;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    background-color: #fff;
+
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 13px;
+        padding-right: 22px;
+        margin-bottom: 15px;
+        @include f700;
+        font-size: 16px;
+        color: $bg;
+    }
+
+    &-btn {
+        padding: 12px 5px;
+        font-size: 14px;
+        @include f700;
+        color: #fff;
+        background-color: $green;
+        text-align: center;
+        width: 100px;
+
+        &--checkout {
+            width: 123px;
+            margin-left: 6px;
+            background-color: $red;
         }
     }
 }
@@ -203,7 +289,7 @@
     left: 20px;
     padding: 0 20px;
     background-color: #fff;
-    border: 0px solid rgb(204, 204, 204);
+    border: 0 solid rgb(204, 204, 204);
     transition: all .3s;
     height: 0;
     overflow: hidden;
@@ -217,18 +303,8 @@
 
 // header end
 
-
-// &__popup-box {
-//     position: relative;
-
-// &__popup-notification,
-// &__popup-message,
-// &__popup-basket {
-//     margin-left: 15px;
-
 //     &:hover {
-//         .header__popup-menu {
-//             border: 1px solid #e0e0e0;
+//         .header__popup-menu {//             
 //             overflow: hidden;
 //             height: auto;
 //             z-index: 3;
@@ -241,46 +317,6 @@
 //     }
 // }
 
-// &__popup-menu {
-//     position: absolute;
-//     top: 62px;
-//     right: 0;
-//     height: 0;
-//     overflow: hidden;
-//     transition: all 0.3s;
-//     background-color: #fff;
-
-// }
-
-// &__popup-item {
-//     display: flex;
-//     align-items: center;
-//     padding: 0 23px;
-//     border: 0px solid #e0e0e0;
-//     border-top: none;
-//     width: 269px;
-//     position: relative;
-//     transition: all 0.3s;
-
-//     &::before {
-//         position: absolute;
-//         top: 27px;
-//         right: 28px;
-//         color: #b0bec5;
-//         font-size: 16px;
-//     }
-// }
-
-// &__item-color::before {
-//     color: $tomato;
-// }
-
-// &__popup-name {
-//     font-size: 12px;
-//     color: #263238;
-//     @include f700;
-// }
-
 // &__popup-h1 {
 //     font-size: 11px;
 //     color: #84b743;
@@ -291,68 +327,6 @@
 //     color: #707070;
 // }
 
-// &__popup-title {
-//     @include f500;
-//     color: $bg;
-// }
-
-// &__popup-theme {
-//     font-size: 12px;
-//     color: $green;
-// }
-
-// &__popup-price {
-//     font-size: 16px;
-//     @include f500;
-//     color: #000;
-// }
-
-// &__popup-summ {
-//     padding: 16px 17px 12px;
-//     border: 1px solid #e0e0e0;
-//     border-bottom: none;
-// }
-
-// &__summ-title {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding-left: 13px;
-//     padding-right: 22px;
-//     margin-bottom: 15px;
-//     font-size: 16px;
-//     @include f700;
-// }
-
-// &__summ-btn {
-//     padding: 12px 5px;
-//     font-size: 14px;
-//     @include f700;
-//     color: #fff;
-//     background-color: $green;
-//     text-align: center;
-//     width: 100px;
-
-//     &--checkout {
-//         width: 123px;
-//         margin-left: 6px;
-//         background-color: $red;
-//     }
-// }
-
-// &__popup-notification,
-// &__popup-message {
-//     .header__popup-images {
-//         margin-right: 20px;
-//         width: 48px;
-//         height: 48px;
-//         border-radius: 50%;
-//     }
-
-//     .header__popup-info {
-//         line-height: 18px;
-//     }
-// }
 
 
 // search start
