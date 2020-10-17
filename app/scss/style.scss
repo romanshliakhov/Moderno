@@ -122,6 +122,7 @@
     }
 }
 
+
 .header__btn-login--off {
     display: none;
 }
@@ -134,8 +135,10 @@
     }
 }
 
-.user__box,
-.basket__box {
+.notification__box,
+.message__box,
+.basket__box,
+.user__box {
     position: relative;
     height: 90px;
     margin-top: 40px;
@@ -150,56 +153,95 @@
     }
 }
 
+.notification__box,
+.message__box,
 .basket__box {
     margin-top: 54px;
-    margin-left: 15px;    
+    margin-left: 15px;
 
     &:hover {
-        .basket__menu {
+        .circle__menu {
             overflow: auto;
             height: auto;
         }
-    }  
+    }
 }
 
-.basket__menu {    
-    position: absolute;    
-    border: 1px solid #e0e0e0;    
+.notifiation__menu,
+.message__menu {
+    .circle__images {
+        margin-right: 20px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .circle__info {
+        line-height: 18px;
+    }
+}
+
+.circle__menu {
+    position: absolute;
     top: 62px;
-    right: 0;    
+    right: 0;
     height: 0;
     overflow: hidden;
     transition: all .3s;
-    
+
 }
 
-.basket__item {
+.circle__item {
     background-color: #fff;
     border-top: none;
     padding: 23px;
     display: flex;
     align-items: center;
-    width: 269px;  
+    width: 269px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 27px;
+        right: 28px;
+        color: #b0bec5;
+        font-size: 16px;
+    }
 }
 
-.basket__images {
+.circle__images {
     margin-right: 15px;
 }
 
-.basket__info-name {
+.circle__info-name {
     color: $bg;
     @include f500;
 }
 
-.basket__info-theme {
+.circle__info-theme {
     font-size: 12px;
     color: $green;
 }
 
-.basket__info-price {
+.circle__info-price {
     font-size: 16px;
     @include f500;
     color: #000;
+}
+
+.circle__info-h1 {
+    font-size: 11px;
+    color: #84b743;
+}
+
+.circle__info-data {
+    font-size: 10px;
+    color: #707070;
+}
+
+.icons-color::before {
+    color: $tomato;
 }
 
 .basket__summ {
@@ -302,33 +344,6 @@
 }
 
 // header end
-
-//     &:hover {
-//         .header__popup-menu {//             
-//             overflow: hidden;
-//             height: auto;
-//             z-index: 3;
-//         }
-
-//         .header__popup-item {
-//             padding: 23px;
-//             border-width: 1px;
-//         }
-//     }
-// }
-
-// &__popup-h1 {
-//     font-size: 11px;
-//     color: #84b743;
-// }
-
-// &__popup-data {
-//     font-size: 10px;
-//     color: #707070;
-// }
-
-
-
 // search start
 .search {
     background-repeat: no-repeat;
