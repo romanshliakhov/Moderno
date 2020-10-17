@@ -160,9 +160,18 @@
     margin-left: 15px;
 
     &:hover {
+        .header__circle::before {
+            color: $bg;
+        }
+
         .circle__menu {
             overflow: auto;
             height: auto;
+        }
+
+        .circle__item {
+            padding: 23px;
+            border-width: 1px;
         }
     }
 }
@@ -194,12 +203,15 @@
 .circle__item {
     background-color: #fff;
     border-top: none;
-    padding: 23px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    padding: 0 23px;
     display: flex;
     align-items: center;
     width: 269px;
-    border: 1px solid #e0e0e0;
+    border: 0px solid #e0e0e0;
     position: relative;
+    transition: all .3s;
 
     &::before {
         position: absolute;
