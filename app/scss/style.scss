@@ -8,7 +8,6 @@
     justify-content: space-between;
     height: 90px;
     align-items: center;
-    position: relative;
 }
 
 .header__text {
@@ -139,6 +138,19 @@
     }
 }
 
+.user__box {
+    position: relative;
+
+    &:hover {
+        .user__menu {
+            height: auto;
+            border-width: 1px;
+            padding: 20px;
+            overflow: auto;
+        }
+    }
+}
+
 .user {
     margin-left: 20px;
     margin-right: 25px;
@@ -193,7 +205,7 @@
     background-color: #fff;
     border: 0px solid rgb(204, 204, 204);
     transition: all .3s;
-    height: 0px;
+    height: 0;
     overflow: hidden;
 
     a {
@@ -205,19 +217,9 @@
 
 // header end
 
-// &__user-box,
+
 // &__popup-box {
 //     position: relative;
-
-//     &:hover {
-//         .header__user-menu {
-//             height: auto;
-//             border-width: 1px;
-//             padding: 20px;
-//             overflow: auto;
-//         }
-//     }
-// }
 
 // &__popup-notification,
 // &__popup-message,
