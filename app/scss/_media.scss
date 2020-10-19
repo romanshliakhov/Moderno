@@ -3,13 +3,9 @@
         flex-wrap: wrap;
     } 
     
-    .footer__col {        
-        margin-top: 30px;        
-    }
-
     .footer__col-adress {
+        margin-bottom: 30px;
         min-width: 100%;
-        
     }
 }
 
@@ -18,9 +14,28 @@
         justify-content: flex-start;
     } 
 
-    .footer__col-socials {
-        min-width: 100%;
-              
+    .footer__col-social {
+        margin-top: 30px;
+        min-width: 100%;              
+    }
+
+    .footer__col-menu {
+        & + & {
+            margin-left: 40px;
+        }
     }
 }
 
+@media (max-width: 540px) {
+    .footer__col {        
+       min-width: 100%;              
+    }
+
+    .footer__col-menu {
+        & + & {
+            margin-top: 30px;
+            margin-left: 0;
+        }
+    }
+
+}
