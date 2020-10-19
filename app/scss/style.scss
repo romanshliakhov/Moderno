@@ -167,7 +167,7 @@
         .circle__menu {
             overflow: auto;
             height: auto;
-        }
+            }
 
         .circle__item {
             padding: 23px;
@@ -197,6 +197,7 @@
     height: 0;
     overflow: hidden;
     transition: all .3s;
+    z-index: 1;
 
 }
 
