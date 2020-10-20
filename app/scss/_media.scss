@@ -73,6 +73,52 @@
 
 }
 
+@media (max-width: 520px) {
+    .header__btn-menu {
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-color: $bg;
+        position: absolute;
+        right: 0;
+        top: 0;
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            color: #fff;
+        }
+    }
+
+    .header__box {
+        transition: all 0.5s;
+        transform: translateX(100%);
+        &.active {
+            transform: translateX(0);
+        }
+    }
+
+    .header__logo {
+        margin-left: 60px;
+    }
+
+    .menu__btn {
+        position: absolute;
+        top: 24px;
+        div {
+            background-color: $bg;
+        }
+    }
+
+    .header__top-inner {
+        height: 70px;
+    }
+}
+
+
+
 
 
 @media (min-width: 841px) {
