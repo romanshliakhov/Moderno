@@ -1835,9 +1835,74 @@ button.icon-unsorted {
         @include f500;
     }
 }
-
-
 // end product-one
+
+// start page 404
+.page-404__wrapper {
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    margin-bottom: 150px;
+}
+
+.page-404__head {
+    padding: 23px 27px;
+    font-size: 24px;
+    color: #444;
+    @include f500;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.page-404__inner {
+    background-color: $green;
+    text-align: center;
+    color: #fff;
+}
+
+.page-404__title {
+    padding-top: 70px;
+    padding-bottom: 20px;    
+    font-size: 300px;
+    line-height: 300px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/page-404.png);
+        width: 150px;
+        height: 292px;
+        margin-left: 20px;
+    }
+}
+
+.page-404__subtitle {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+.page-404__text {
+    max-width: 501px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.page-404__link {
+    padding: 20px 30px 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Raleway-Bold', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+// end page 404
 
 
 @import '_media';
