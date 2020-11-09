@@ -12,7 +12,10 @@ $intext: #90a4ae;
 $border: #e7ecf2;
 $bg-text: #f8f8f8;
 
-
+@mixin f300 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
 
 @mixin f500 {
     font-family: 'Roboto', sans-serif;
