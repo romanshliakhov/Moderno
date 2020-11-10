@@ -456,6 +456,7 @@
     font-size: 18px;
     color: #fff;
     position: relative;
+
     &::before {
         content: "\f044";
         font-family: 'icomoon';
@@ -1835,16 +1836,19 @@ button.icon-unsorted {
         @include f500;
     }
 }
+
 // end product-one
 
 // start page 404
-.page-404__wrapper {
+.page-404__wrapper,
+.about__wrapper {
     border: 1px solid #dcdcdc;
     background-color: #fff;
     margin-bottom: 150px;
 }
 
-.page-404__head {
+.page-404__head,
+.about__head {
     padding: 23px 27px;
     font-size: 24px;
     color: #444;
@@ -1860,12 +1864,13 @@ button.icon-unsorted {
 
 .page-404__title {
     padding-top: 70px;
-    padding-bottom: 20px;    
+    padding-bottom: 20px;
     font-size: 300px;
     line-height: 300px;
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
     position: relative;
+
     &::after {
         content: "";
         position: absolute;
@@ -1880,7 +1885,7 @@ button.icon-unsorted {
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;   
+    font-family: 'Open Sans', sans-serif;
 }
 
 .page-404__text {
@@ -1903,6 +1908,27 @@ button.icon-unsorted {
 }
 
 // end page 404
+
+// start about page
+.about__inner {
+    padding: 0px 50px;
+}
+
+.about__box {
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        @include f700;
+        color: #444;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+// start about page
 
 
 @import '_media';
