@@ -2388,7 +2388,7 @@ button.icon-unsorted {
         margin-left: 175px;
         padding: 15px 36px;
         color: #fff;
-        background-color: $green;        
+        background-color: $green;
         border: none;
         cursor: pointer;
     }
@@ -2418,13 +2418,10 @@ button.icon-unsorted {
         padding-right: 15px;
         padding-top: 5px;
         color: #444;
-        &::placeholder {
-            color: #707070;
-        }
 
         span {
             color: $green;
-        }        
+        }
     }
 
     select,
@@ -2436,6 +2433,10 @@ button.icon-unsorted {
         width: 100%;
         border: 1px solid #d7d7d7;
         background-color: #f9f9f9;
+
+        &::placeholder {
+            color: #707070;
+        }
     }
 
     input[type="file"] {
@@ -2475,10 +2476,10 @@ button.icon-unsorted {
         right: 20px;
         line-height: 40px;
         border: none;
-        
+
         &::before {
             content: "\f0d7";
-            font-family: 'icomoon';          
+            font-family: 'icomoon';
         }
     }
 
@@ -2489,8 +2490,8 @@ button.icon-unsorted {
         border: 1px solid #d7d7d7;
         border-bottom-color: #d7d7d7;
         border-radius: 0px;
-        box-shadow: none; 
-        background-color:#f9f9f9;            
+        box-shadow: none;
+        background-color: #f9f9f9;
     }
 
     .jq-file__name {
@@ -2506,7 +2507,7 @@ button.icon-unsorted {
         box-shadow: none;
         font-size: 12px;
         line-height: 40px;
-        color: #707070;        
+        color: #707070;
     }
 
     .jq-file__browse {
@@ -2527,5 +2528,152 @@ button.icon-unsorted {
 }
 
 // end upload page
+
+// start withdrawals page
+.withdrawals__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.withdrawals__col {
+    max-width: 570px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #dedede;
+}
+
+.withdrawals__title {
+    padding: 18px 32px 24px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 30px;
+    color: $bg;
+    font-size: 24px;
+    @include f500;
+}
+
+.withdrawals__content {
+    padding-left: 35px;
+    padding-right: 40px;
+
+    button {
+        margin-bottom: 50px;
+        padding: 20px 28px;
+        color: #fff;
+        background-color: $green;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.withdrawals__form-line {
+    margin-bottom: 25px;
+
+    label {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        @include f500;
+        margin-bottom: 15px;
+        color: $bg;
+
+        span {
+            color: $green;
+        }
+    }
+
+    input,
+    select {
+        display: block;
+        height: 40px;
+        padding: 0px 18px;
+        width: 100%;
+        border: 1px solid #d7d7d7;
+        background-color: #f9f9f9;
+
+        &::placeholder {
+            color: #707070;
+        }
+    }
+
+    .jq-selectbox {
+        width: 100%;
+    }
+
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 0 18px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        background: #f9f9f9;
+        box-shadow: none;
+        font: 14px/32px 'Roboto-Regular', sans-serif;
+        color: #707070;
+        text-shadow: none;
+        line-height: 40px;
+    }
+
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
+
+    .jq-selectbox__trigger-arrow {
+        top: 0;
+        right: 20px;
+        line-height: 40px;
+        border: none;
+
+        &::before {
+            content: "\f0d7";
+            font-family: 'icomoon';
+        }
+    }
+}
+
+.withdrawals__content-items {
+    padding-bottom: 35px;
+}
+
+.withdrawals__content-item {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    font-size: 13px;
+    color: #444;
+    &:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+}
+
+.withdrawals__content-data {
+    width: 154px;
+    padding-left: 20px;
+    @include f500;
+}
+
+.withdrawals__content-email {
+    width: 180px;
+    @include f500;
+}
+
+.withdrawals__content-price {
+    width: 70px;
+    @include f700;
+}
+
+.withdrawals__content-status {
+    width: 88px;
+    @include f700; 
+
+    &.withdrawals__content-paid {
+        color: $green;
+    }    
+}
+
+
+
+// end withdrawals page
 
 @import '_media';
