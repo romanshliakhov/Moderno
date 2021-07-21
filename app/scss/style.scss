@@ -1698,7 +1698,45 @@ button.icon-unsorted {
 .price__box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 30px 0;
+
+
+    .jq-selectbox {
+        max-width: 540px;
+        width: 100%;
+    }
+
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 0 18px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        background: #fff;
+        box-shadow: none;
+        font: 13px/30px 'Roboto-Regular', sans-serif;
+        color: #707070;
+        text-shadow: none;
+        line-height: 40px;
+    }
+
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
+
+    .jq-selectbox__trigger-arrow {
+        top: 0;
+        right: 20px;
+        line-height: 40px;
+        border: none;
+
+        &::before {
+            content: "\f0d7";
+            font-family: 'icomoon';
+            color: $green;
+        }
+    }
 }
 
 .price__product {
@@ -2144,6 +2182,14 @@ button.icon-unsorted {
 
 .page-box__content {
     padding: 30px 35px 80px;
+
+    button {        
+        padding: 15px 30px;
+        color: #fff;
+        background-color: $green;
+        border: none;
+        cursor: pointer;
+    }
 }
 
 .settings__line {
@@ -2173,6 +2219,42 @@ button.icon-unsorted {
         background-color: #f9f9f9;
         border: 1px solid #dedede;
     }
+
+    .jq-selectbox {
+        max-width: 540px;
+        width: 100%;
+    }
+
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 0 18px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        background: #f9f9f9;
+        box-shadow: none;
+        font: 14px/32px 'Roboto-Regular', sans-serif;
+        color: #707070;
+        text-shadow: none;
+        line-height: 40px;
+    }
+
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
+
+    .jq-selectbox__trigger-arrow {
+        top: 0;
+        right: 20px;
+        line-height: 40px;
+        border: none;
+
+        &::before {
+            content: "\f0d7";
+            font-family: 'icomoon';
+        }
+    }
+
 }
 
 // end settings page
